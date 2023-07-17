@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: KafkaProducerSimulator
+  server:
+    port: 8080
+
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+kafka:
+  topic: test
+  producers:
+    default:
+      retries: 5
+      bootstrap:
+        servers: localhost:9092
